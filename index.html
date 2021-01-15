@@ -3,7 +3,7 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
-    <script src="https://kit.fontawesome.com/3a11080fd4.js" crossorigin="anonymous"></script>
+<!--    <script src="https://kit.fontawesome.com/3a11080fd4.js" crossorigin="anonymous"></script>-->
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <script src="scripts\common.js"></script>
     <div id="main-container-div">
 
         <div class="header">
@@ -23,10 +24,12 @@
                 <p class="title">ScriBBler</p>
                 <p class="sub-title">Explore, Imagine, Create</p>
             </div>
+
             <div class="login-buttons-container">
                 <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
                 <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
             </div>
+
         </div>
 
         <div class="postButtons">
@@ -37,6 +40,61 @@
 
     </div>
 
+    <div>
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="signin-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Welcome Back!</h2>
+                </div>
+                <hr>
+                <form>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+                </form>
+
+                <p class="bottom-banner">Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Insert code for Sign Up modal here -->
+    <div>
+        <div class="modal" id="signup-modal">
+            <div class="modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Get Started</h2>
+                </div>
+                <hr>
+                <form>
+                    <label for="fullname" class="label-text">Full name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <label for="confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Place all Javascript for header in this file -->
+    <script src="scripts\common.js"></script>
+    <!-- Place all Javascript for rest of the elements in this file -->
+    <script src="scripts\index.js"></script>
 </body>
 
 </html>
