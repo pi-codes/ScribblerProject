@@ -1,3 +1,8 @@
+html{
+    height: 100%;
+    width:100%;
+}
+
 body{
     background: url('../images/background.jpg') no-repeat fixed center center;
     background-size: cover;
@@ -8,41 +13,31 @@ body{
     height: 100%;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5px;
-}
-
-.title-container{
+#main-container-div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
 }
 
-.title {
-    font-family: Montez, cursive;
-    font-size: 44px;
-    margin: 0px;
-    color: blue;
+.postButtons{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.sub-title {
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 14px;
-    margin: 0px;
-}
-
-.blue-button{
-    background-color: blue;
+.yellow-button{
+    background-color: yellow;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-right: 5px;
     padding-left:5px;
-    color:white;
+    color:black;
     font-family: 'Ubuntu Condensed';
     font-size: 14px;
+    margin-left: 10px
 }
-
 

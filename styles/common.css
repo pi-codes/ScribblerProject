@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: Montez, cursive;
+    font-size: 44px;
+    margin: 0px;
+    color: blue;
+}
+
+.sub-title {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.blue-button{
+    background-color: blue;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left:5px;
+    color:white;
+    font-family: 'Ubuntu Condensed';
+    font-size: 14px;
+}
