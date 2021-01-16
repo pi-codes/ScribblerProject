@@ -3,13 +3,19 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
-<!--    <script src="https://kit.fontawesome.com/3a11080fd4.js" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
     <link href='styles\index.css' rel='stylesheet' type='text/css'>
     <link href='styles\common.css' rel='stylesheet' type='text/css'>
+
+
+
     <title>ScriBBler</title>
 
 </head>
@@ -84,6 +90,27 @@
                     <label for="confirmpassword" class="label-text">Confirm Password</label>
                     <input type="password" id="confirm_password" placeholder="Confirm Password" required>
                     <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signin-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Insert code for Create Post modal here -->
+        <div class="modal" id="create-post-modal">
+
+            <div class="post-modal-content">
+
+                <div class="modal-head">
+                    <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span>
+                    <h2 class="modal-title">Pen your post</h2>
+                </div>
+                <form id=create-post-form>
+                    <label for="title" class="label-text">Title</label>
+                    <input type="text" id="title" placeholder="" required>
+                    <label for="content" class="label-text">Content</label>
+                    <textarea cols="50" rows="15" name="post-details" form="create-post-form"></textarea>
+                    <button type="submit" onclick="createPost()" class="create-btn">Create</button>
                 </form>
             </div>
         </div>

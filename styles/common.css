@@ -28,11 +28,12 @@
     background-color: blue;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 5px;
-    padding-left:5px;
+    padding-right:18px;
+    padding-left:18px;
     color:white;
     font-family: 'Ubuntu Condensed';
-    font-size: 14px;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
 .login-buttons-container{
@@ -92,7 +93,7 @@ input {
 }
 
 .modal-title{
-    align-self: center;
+    align-self: flex-start;
     font-family: Roboto;
 }
 
@@ -105,6 +106,7 @@ input {
     margin-top: 20px;
     cursor: pointer;
     font-family: Roboto;
+    border-radius: 4px;
 }
 
 .signup{
@@ -118,5 +120,6 @@ input {
 .bottom-banner{
     font-family: Roboto;
     align-items: center;
+    justify-content: center;
 }
 
